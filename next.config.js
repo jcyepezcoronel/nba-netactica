@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ['upload.wikimedia.org'],
   },
+  env: {
+    NBA_API_KEY: process.env.NBA_API_KEY
+  }
 }
 
 module.exports = nextConfig

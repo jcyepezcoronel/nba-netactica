@@ -8,7 +8,7 @@ import { IGame } from '../shared/interfaces/Game';
 
 interface HomeProps {
   seasons: number[];
-  teams: ITeam[]
+  teams: ITeam[];
 }
 
 export default function Home({ seasons, teams }: HomeProps) {
@@ -72,7 +72,7 @@ export default function Home({ seasons, teams }: HomeProps) {
 }
 
 export async function getStaticProps() {
-  
+
   const [resTeams, resSeasons] = await Promise.all([
     apiNBA.get('teams'),
     apiNBA.get('seasons'),

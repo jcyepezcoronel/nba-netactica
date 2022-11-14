@@ -1,1 +1,1 @@
-export const NBA_API_KEY = '35aeddc58amshfe2e2bda49568a6p1b4b76jsn1b9f2934afa5';
+export const NBA_API_KEY = process.env.NBA_API_KEY || '';
